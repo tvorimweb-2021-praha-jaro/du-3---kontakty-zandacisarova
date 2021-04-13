@@ -1,2 +1,108 @@
 html { box-sizing: border-box; }
 *, ::after, ::before { box-sizing: inherit; }
+
+:root {
+    --white:hsl(0, 0%, 100%);
+    --grey:hsl(0, 0%, 92%);
+}
+
+body {
+    width: auto;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+   
+}
+
+.kontakty {
+    width: 100%;
+    height: auto;
+    padding: 0 2.5rem;
+    margin: 0;
+    background-color: var(--white);   
+}
+
+.kontakty h1 {
+    display: flex;
+    justify-content: start;
+}
+
+.vizitky {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row nowrap;
+    border-radius: 10px;
+    background-color: var(--grey);
+    padding: 0 1rem;  
+    align-content: space-around;         
+}
+
+ul {
+    position: relative;
+    display: flex; 
+    flex-flow: row nowrap;  
+    justify-content: space-evenly;
+    list-style-type: none;
+    padding-left: 0;   
+}
+
+li {
+    position: relative;
+    width: 22%;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--white);
+    align-items: center;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-shrink: 0;   
+}
+
+img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   display: flex; 
+   justify-content: center;
+}
+
+h2 {
+    font-size: 14pt;
+    justify-items: center;
+    margin-top: 1rem;
+}
+
+p {
+    text-align: center;
+    font-size: 10pt;
+    font-weight: normal;
+    align-content: center;
+    justify-content: center;
+}
+
+.ikony {
+    width: 90%;
+    display: flex;
+    justify-content:space-around;
+    justify-items:center;
+    align-items: center;    
+}
+
+.github, 
+.linkedin,
+.twitter {
+    cursor: pointer;
+    display: flex;
+    width: 35px;
+    height: 35px;
+    border-radius: 0;
+}
+
+/* nepodařilo se mi .li nastavit tak jako v zadání, kde jsou vizitky poměrově širší a text je roztáhlejší. Nevím, zda jsem udělala něco špatně, nebo je to věc indivituálního stylování. */
