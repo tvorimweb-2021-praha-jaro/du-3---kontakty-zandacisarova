@@ -14,8 +14,6 @@ body {
 }
 
 .kontakty {
-    width: 100%;
-    height: auto;
     padding: 0 2.5rem;
     margin: 0;
     background-color: var(--white);   
@@ -27,20 +25,12 @@ body {
 }
 
 .vizitky {
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row nowrap;
     border-radius: 10px;
     background-color: var(--grey);
-    padding: 0 1rem;  
-    align-content: space-around;         
+    padding: 0 1rem;            
 }
 
 ul {
-    position: relative;
     display: flex; 
     flex-flow: row nowrap;  
     justify-content: space-evenly;
@@ -48,8 +38,7 @@ ul {
     padding-left: 0;   
 }
 
-li {
-    position: relative;
+.osoba {
     width: 22%;
     padding: 2rem;
     margin: 1rem;
@@ -58,9 +47,7 @@ li {
     flex-flow: column nowrap;
     background-color: var(--white);
     align-items: center;
-    justify-content: space-between;
-    justify-items: center;
-    align-content: center;
+    justify-content: space-between; 
     flex-grow: 1;
     flex-shrink: 0;   
 }
@@ -77,6 +64,7 @@ h2 {
     font-size: 14pt;
     justify-items: center;
     margin-top: 1rem;
+    
 }
 
 p {
@@ -92,12 +80,10 @@ p {
     display: flex;
     justify-content:space-around;
     justify-items:center;
-    align-items: center;    
+       
 }
 
-.github, 
-.linkedin,
-.twitter {
+.ikonka {
     cursor: pointer;
     display: flex;
     width: 35px;
